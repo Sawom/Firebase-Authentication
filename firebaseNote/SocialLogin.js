@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { Button } from 'react-bootstrap';
 import { FaGoogle } from 'react-icons/fa';
-
+// new updated note ei 2 line add kora lagbe, firebase er default app set korar jonno
+import app from '../../../Firebase/Firebase';
+const auth = getAuth(app);
 
 
 const SocialLogin = () => {
