@@ -14,3 +14,10 @@ const RequireAuth = ({children}) => {
 };
 
 export default RequireAuth;
+// in route app.js
+<Route path='/shipment' element={
+            <RequireAuth>
+                <Shipment></Shipment> 
+            </RequireAuth>
+           
+           } > </Route>
